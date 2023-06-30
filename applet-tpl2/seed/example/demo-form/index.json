@@ -1,0 +1,19 @@
+{
+  "navigationStyle": "custom",
+  "backgroundTextStyle": "dark",
+  "usingComponents": {
+      "custom-header": "/components/base/custom-header/index",
+      "select-button": "/components/base/select-button/index",
+      "m-form": "/components/base/m-form/m-form/index",
+      "m-item": "/components/base/m-form/m-item/index",
+      "m-input": "/components/base/m-form/m-input/index",
+      "m-textarea": "/components/base/m-form/m-textarea/index",
+      "m-location": "/components/base/m-form/m-location/index",
+      "fixed-footer": "/components/base/fixed-footer/index",
+      "m-datetime-picker": "/components/base/m-form/m-datetime-picker/index",
+      "m-verification-code": "/components/base/m-form/m-verification-code/index",
+      "m-unit-picker": "/components/base/m-form/m-unit-picker/index",
+      "m-multi-picker": "/components/base/m-form/m-multi-picker/index",
+      "m-city-choose": "/components/base/m-form/m-city-choose/index"
+  }
+}

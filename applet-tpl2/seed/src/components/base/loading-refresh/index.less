@@ -1,0 +1,46 @@
+.loading-refresh {
+  height: 100rpx;
+  transition: all 0.1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.loading-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.loading {
+  width: 36rpx;
+  height: 36rpx;
+  border-radius: 50%;
+  border-top: 6rpx solid rgb(255 141 26 / 30%);
+  border-right: 6rpx solid rgb(255 141 26 / 30%);
+  border-bottom: 6rpx solid rgb(255 141 26 / 30%);
+  border-left: 6rpx solid rgb(255 141 26 / 80%);
+  transform: translateZ(0);
+  animation: load-anim 1.1s infinite linear;
+}
+
+.text {
+  margin-left: 16rpx;
+  font-size: 28rpx;
+  color: rgb(0 0 0 / 45%);
+}
+
+@keyframes load-anim {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

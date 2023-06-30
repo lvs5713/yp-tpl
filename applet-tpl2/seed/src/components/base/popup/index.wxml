@@ -1,0 +1,19 @@
+<view class="popup" style="visibility: {{show ? 'visible' : 'hidden'}}; z-index: {{zIndex}}" catch:touchmove="onDisableMove">
+	<view class="mask" style="opacity: {{openedOpacity ? '1' : '0'}};" bind:tap="onMaskTap" />
+	<block wx:if="{{slideDir}}">
+		<slide
+		 opened="{{visible}}"
+		 direction="{{slideDir}}"
+		 position="{{slidePos}}"
+		 duration="200"
+		 positionStyle="{{positionStyle}}"
+		 bind:exited="slideExited"
+		 bind:entering="slideEntering"
+		>
+			<slot wx:if="{{show}}" />
+      <!-- 如果是底部弹窗默认添加个安全距离节点，背景色默认为白色，后面可以传递进来，因为现在的弹窗都是白色 -->
+			<m-stripes wx:if="{{position == 'bottom'}}" backgroundColor="{{isStripesBg ? '#fff' : 'transparent'}}" />
+		</slide>
+	</block>
+</view>
+

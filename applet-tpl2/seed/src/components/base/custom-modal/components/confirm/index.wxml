@@ -1,0 +1,10 @@
+<view class="mask" style="opacity: {{visible ? 1 : 0}}; visibility: {{visible ? 'visible' : 'hidden'}}" catch:touchmove="onTouchmove">
+  <view class="body">
+    <view class="title">{{options.title}}</view>
+    <view class="content">{{options.content}}</view>
+    <view class="actions">
+      <hover custom-class="cancel" bgc bind:tap="onCancel">{{options.cancelText}}</hover>
+      <hover custom-class="sure" bgc bind:tap="onSure">{{options.confirmText}}</hover>
+    </view>
+  </view>
+</view>

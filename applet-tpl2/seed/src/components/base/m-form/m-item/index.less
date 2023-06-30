@@ -1,0 +1,63 @@
+.item-wrap {
+  background-color: #fff;
+  position: relative;
+
+  .border {
+    height: 1rpx;
+    background: rgba(232, 232, 232, 1);
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+  }
+
+  .bottom-content {
+    padding: 0 32rpx;
+  }
+}
+
+
+.item-row {
+  display: flex;
+  padding-left: 32rpx;
+  align-items: center;
+  
+  .label {
+    height: 44rpx;
+    font-size: 28rpx;
+    line-height: 44rpx;
+    margin: 0 20rpx 0 0;
+    position: relative;
+    font-weight: 500;
+
+    &.required-dot::before {
+      content: '*';
+      color: @warn-color;
+      position: absolute;
+      left: -14rpx;
+      top: 2rpx;
+      font-size: 32rpx;
+    }
+  }
+
+  .content {
+    flex: 1;
+    overflow: hidden;
+    padding-right: 24rpx;
+    position: relative;
+    font-size: 28rpx;
+  }
+
+  .icon {
+    position: relative;
+    right: 70rpx;
+    width: 0;
+    line-height: 42rpx;
+    pointer-events: none;
+  }
+
+  .required {
+    color: rgba(204, 58, 53, 1);
+    font-size: 30rpx;
+  }
+}

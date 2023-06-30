@@ -1,0 +1,17 @@
+{
+  "extends": ["stylelint-config-standard"],
+  "rules": {
+    "color-no-invalid-hex": true,
+    "unit-no-unknown": [true, {
+      "ignoreUnits": ["rpx"]
+    }],
+    "declaration-empty-line-before": null,
+    "selector-type-no-unknown": null,
+    "no-duplicate-selectors": null,
+    "comment-empty-line-before": null,
+    "no-missing-end-of-source-newline": null,
+    "color-hex-case": null,
+    "function-no-unknown": null,
+    "block-no-empty": null
+  }
+}

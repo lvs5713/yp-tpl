@@ -1,0 +1,26 @@
+<block wx:for="{{list}}" wx:key="modalKey">
+  <alert
+    wx:if="{{item.type === 'alert'}}"
+    modalKey="{{item.modalKey}}"
+    visible="{{item.visible}}"
+    options="{{item.options}}"
+    showCloseBtn="{{item.options.showCloseBtn}}"
+    bind:resolve="onResolve"
+    bind:reject="onReject"
+  />
+  <confirm
+    wx:if="{{item.type === 'confirm'}}"
+    modalKey="{{item.modalKey}}"
+    visible="{{item.visible}}"
+    options="{{item.options}}"
+    bind:resolve="onResolve"
+    bind:reject="onReject"
+  />
+  <jx-alert
+    wx:if="{{item.type === 'jxAlert'}}"
+    modalKey="{{item.modalKey}}"
+    visible="{{item.visible}}"
+    options="{{item.options}}"
+    bind:action="onAction"
+  />
+</block>

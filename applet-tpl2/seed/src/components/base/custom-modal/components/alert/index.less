@@ -1,0 +1,54 @@
+@height: 100rpx;
+
+.mask {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(0 0 0 / 60%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 10000;
+  transition: 0.5s;
+}
+
+.body {
+  width: 600rpx;
+  background-color: #fff;
+  border-radius: 12rpx;
+}
+
+.title {
+  font-size: 32rpx;
+  font-weight: 500;
+  padding: 24rpx 24rpx 0;
+  text-align: center;
+}
+
+.content {
+  text-align: center;
+  padding: 72rpx 24rpx;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: @height;
+  font-size: 32rpx;
+  border-top: 1rpx solid #eee;
+}
+
+.sure {
+  height: @height;
+  color: @primary-color;
+  line-height: @height;
+  flex: 1;
+}
+
+.close-btn {
+  margin-top: 50rpx;
+}

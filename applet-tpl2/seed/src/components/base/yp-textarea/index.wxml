@@ -1,0 +1,23 @@
+<view bind:tap="onTap">
+  <view wx:if="{{isStrike && !focus}}" class="textarea custom-class">
+    <text wx:if="{{value}}" class="valueText">{{value}}</text>
+    <text wx:else class="placeholder">{{placeholder}}</text>
+  </view>
+  <textarea
+    wx:else
+    class="textarea custom-class"
+    value="{{value}}"
+    auto-focus="{{autoFocus}}"
+    focus="{{focus}}"
+    adjust-position="{{adjustposition}}"
+    bind:input="onInput"
+    bind:blur="onBlur"
+    maxlength="{{maxlength}}"
+    disable-default-padding
+    placeholder-style="{{placeholderStyle}}"
+    disabled="{{inputDisabled}}"
+    placeholder="{{placeholder}}"
+    cursor-spacing="{{cursorSpacing}}"
+  >
+  </textarea>
+</view>

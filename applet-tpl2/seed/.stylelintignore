@@ -1,0 +1,13 @@
+node_modules/
+**/node_modules/
+dist/
+coverage/
+mocks/
+.eslintrc.js
+.script-config.js
+.types.d.ts
+mock/
+command/
+bin/
+packages/
+src/assets/iconfont/iconfont.less

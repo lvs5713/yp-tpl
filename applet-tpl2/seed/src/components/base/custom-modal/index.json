@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "alert": "./components/alert/index",
+    "confirm": "./components/confirm/index",
+    "jx-alert": "./components/jx-alert/index"
+  }
+}

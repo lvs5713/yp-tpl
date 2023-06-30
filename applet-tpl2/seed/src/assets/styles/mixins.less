@@ -1,0 +1,34 @@
+/**
+  但是不要定义 .class {} 或者 view {} 这种写法，会在每个less文件都插入一遍
+  使用方法的写法就不会
+*/
+/** 超出隐藏显示省略号 */
+  .ellip() {
+    overflow: hidden;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+  }
+  
+  /** cdn图片背景 一定要用这个 */
+  .bg(@img) {
+    background-image: url('https://statics.zhaogongdi.com/images/@{img}');
+  }
+  
+  
+  /** 文字多行溢出 */
+  .textrow(@row: 2) {
+    display: -webkit-box;
+    overflow: hidden;
+    word-break: break-all;
+    -webkit-line-clamp: @row;
+    -webkit-box-orient: vertical;
+  }
+
+  /** active */
+  .active(@color:rgba(255, 141, 26, 1), @background:rgba(0, 0, 0, 0.05)) {
+    &:active {
+      color: @color;
+      background: @background;
+    }
+  }

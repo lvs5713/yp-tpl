@@ -1,0 +1,31 @@
+.top-wrapper {
+  z-index: 10;
+  position: fixed;
+  right: 44rpx;
+  bottom: calc(200rpx + constant(safe-area-inset-bottom));
+  bottom: calc(200rpx + env(safe-area-inset-bottom));
+}
+.toTopIcon {
+  transform: rotate(90deg);
+  margin-top: 8rpx;
+  font-weight: bold;
+}
+
+.top {
+  display: block;
+  width: 96rpx;
+  height: 96rpx;
+  border-radius: 50%;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0 8rpx 16rpx 0 rgba(0, 0, 0, 0.05);
+  border: 1rpx solid #eff1f6;
+}
+
+.text {
+  position: relative;
+  top: -6rpx;
+  font-size: 18rpx;
+  color: #262626;
+  font-weight: bold;
+}

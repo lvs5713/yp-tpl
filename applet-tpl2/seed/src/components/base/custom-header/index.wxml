@@ -1,0 +1,20 @@
+<view
+ id="custom-header"
+ class="custom-header-component"
+ style="padding-top:{{ fixed ? (paddingTop + height) : 0 }}px; padding-bottom: {{ fixed ? 8 : 0 }}rpx"
+ catch:touchmove="onDisableMove"
+>
+	<view class="custom-header-content {{ isCustomBg ? 'customBg' : '' }} custom-content-class"
+   style="position: {{ fixed ? 'fixed' : 'static' }}; {{ customStyle }}">
+		<view style="height:{{ paddingTop }}px;" />
+		<view class="header-wrap" style="height:{{ height }}px;">
+			<view bind:tap="onBack" class="back-icon" wx:if="{{ showArrow }}"><icon-font type="yp-fanhui" /></view>
+      <view class="header-v" bind:tap="onTitleClick">
+        <slot name="before"></slot>
+        <view class="header-title">{{title}}</view>
+        <slot name="after"></slot>
+      </view>
+    </view>
+  </view>
+</view>
+

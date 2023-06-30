@@ -1,32 +1,38 @@
 {
-  "pc":[
+  "pc": [
     {
-      "name":"pc模板1",
-      "img":"https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png",
-      "describe":"这是第一个pc模板，支持盛开的季节开始手动阀手动阀",
+      "name": "pc模板1",
+      "img": "https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png",
+      "describe": "这是第一个pc模板，支持盛开的季节开始手动阀手动阀",
       "tpl": "pc-tpl1"
     },
     {
-      "name":"pc模板2",
-      "img":"https://t7.baidu.com/it/u=4080826490,615918710&fm=193&f=GIF",
-      "describe":"这是第2个pc模板，支持盛开的季节开始手动阀手动阀",
+      "name": "pc模板2",
+      "img": "https://t7.baidu.com/it/u=4080826490,615918710&fm=193&f=GIF",
+      "describe": "这是第2个pc模板，支持盛开的季节开始手动阀手动阀",
       "tpl": "pc-tpl2"
     }
   ],
-  "m":[
+  "m": [
     {
-      "name":"H5模板1",
-      "img":"https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png",
-      "describe":"这是第一个H5模板，了开坦克瑞特让他快乐符合法规",
+      "name": "H5模板1",
+      "img": "https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png",
+      "describe": "这是第一个H5模板，了开坦克瑞特让他快乐符合法规",
       "tpl": "m-tpl1"
     }
   ],
-  "applet":[
+  "applet": [
     {
-      "name":"小程序模板1",
-      "img":"https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png",
-      "describe":"这是第一个小程序模板，论坛看了都是分开管理",
+      "name": "小程序模板1",
+      "img": "https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png",
+      "describe": "这是第一个小程序模板，论坛看了都是分开管理",
       "tpl": "applet-tpl1"
+    },
+    {
+      "name": "chenlinboss小程序模板",
+      "img": "https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png",
+      "describe": "这是第一个小程序模板，论坛看了都是分开管理",
+      "tpl": "applet-tpl2"
     }
   ]
 }

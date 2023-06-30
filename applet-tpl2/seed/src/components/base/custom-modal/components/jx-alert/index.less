@@ -1,0 +1,93 @@
+@height: 80rpx;
+
+.mask {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(0 0 0 / 60%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  transition: 0.5s;
+}
+
+.body {
+  width: 600rpx;
+  background-color: #fff;
+  border-radius: 12rpx;
+  padding: 54rpx;
+  position: relative;
+
+  &.confirm {
+    width: 629rpx;
+  }
+}
+
+.type-img {
+  height: 107rpx;
+  width: 207rpx;
+  display: block;
+  margin: auto;
+  margin-bottom: 32rpx;
+}
+
+.content {
+  text-align: center;
+  padding: 30rpx 24rpx 54rpx;
+  font-size: 29rpx;
+  position: relative;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: @height;
+  font-size: 32rpx;
+}
+
+.btn {
+  height: @height;
+  line-height: @height;
+  border-radius: 16rpx;
+  flex: 298rpx 0 1;
+
+  &-sure {
+    color: white;
+    background: #FF9802;
+    margin: auto;
+  }
+
+  &-cancel {
+    border: 1px solid gainsboro;
+  }
+}
+
+.btnMr {
+  margin-right: 22rpx;
+}
+
+.close {
+  position: absolute;
+  bottom: -150rpx;
+  left: 50%;
+  transform: translate(-50%) rotateZ(45deg);
+}
+
+.title {
+  text-align: center;
+  font-size: 32rpx;
+  font-weight: 500;
+}
+
+.content-image {
+  width: 100%;
+}
+
+.image-box {
+  margin-bottom: 40rpx;
+}

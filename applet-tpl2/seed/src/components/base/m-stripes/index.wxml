@@ -1,0 +1,3 @@
+<view class="m-stripes">
+  <view class="m-stripes {{isFix?'fix':''}}" style="background-color: {{backgroundColor}};"></view>
+</view>

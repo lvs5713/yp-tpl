@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "slide": "/components/base/anime/slide/index"
+  }
+}

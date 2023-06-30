@@ -1,0 +1,111 @@
+<view class="body-list-box">
+	<custom-header title="发布出租" />
+	<m-form id="form">
+		<view style="margin-bottom: 16rpx;">
+			<m-item label="所在地" required>
+				<m-location name="address" />
+			</m-item>
+			<m-item label="联系电话" required>
+				<m-input name="phone" maxlength="11" />
+			</m-item>
+			<m-item label="验证码" required>
+				<m-verification-code name="code" phoneName="phone" />
+			</m-item>
+		</view>
+
+		<view style="margin-bottom: 16rpx;">
+			<m-item label="机械类型" icon required>
+				<m-multi-picker mode="machine" name="machine" bind:change="onMachineChange" />
+				<view slot="bottom" class="recommend-box">
+					<view style="display:inline-block;" wx:for="{{recommendList}}" wx:key="id">
+						<select-button
+						 catchtap="onClickLabel"
+						 suffix="{{false}}"
+						 data-item="{{item}}"
+						 label="{{machineValue && machineValue.id == item.id ? item.name : ''}}"
+						 select-button-class="machine-button"
+						 placeholder="{{item.name || ''}}"
+						/>
+					</view>
+				</view>
+			</m-item>
+			<view wx:if="{{machineValue && machineValue.id}}">
+				<m-item label="机械品牌" icon>
+					<m-multi-picker
+					 mode="brand"
+					 name="brand"
+					 machineName="machine"
+					 bind:change="onBrandChange"
+					/>
+				</m-item>
+				<m-item label="机械型号" icon>
+					<m-multi-picker
+					 mode="model"
+					 name="model"
+					 machineName="machine"
+					 brandName="brand"
+					/>
+				</m-item>
+			</view>
+		</view>
+
+		<view style="margin-bottom: 16rpx;">
+			<m-item label="出厂日期" icon>
+				<m-datetime-picker name="time" />
+			</m-item>
+			<m-item label="工作时长">
+				<m-input name="duration" maxlength="6" type="number" />
+				<view slot="right" class="time">小时</view>
+			</m-item>
+			<m-item label="租赁价格" required>
+				<m-input name="price" maxlength="13" type="number" />
+				<m-unit-picker name="unit" slot="right" type="hire" />
+			</m-item>
+		</view>
+		
+		<view style="margin-bottom: 16rpx;">
+			<m-item label="出厂年限">
+				<view slot="bottom" class="recommend-box">
+					<select-button placeholder="挖掘机" suffix="{{false}}" select-button-class="machine-button" />
+					<select-button placeholder="挖掘机" suffix="{{false}}" select-button-class="machine-button" />
+				</view>
+			</m-item>
+
+			<m-item label="机械规模" icon>
+				<m-multi-picker
+				 mode="selector"
+				 placeholder="请选择规模"
+				 rangeList="{{[{id: 1, name: '20-30台'}, {id: 2, name: '30-40台'}]}}"
+				 name="sss"
+				/>
+			</m-item>
+
+			<m-item label="所在地区" icon>
+				<m-city-choose name="city" />
+			</m-item>
+		</view>
+		
+		<view class="textarea-content">
+			<view class="title">设备简介</view>
+			<m-textarea
+			 placeholder="请简要描述机械使用情况、保养维修情况等信息，方便您的设备快速被租赁"
+			 isStrike="{{true}}"
+			 name="detail"
+			 maxlength="{{500}}"
+			/>
+		</view>
+
+		<view class="describe">鱼泡机械向您提供网络空间技术服务，发布信息请遵守国家法律法规。</view>
+	</m-form>
+
+	<fixed-footer>
+		<m-button
+		 text="立即发布"
+		 custom-style="width: 100%"
+		 type="primary"
+		 bind:submit="onSubmit"
+		 submit
+		/>
+	</fixed-footer>
+</view>
+

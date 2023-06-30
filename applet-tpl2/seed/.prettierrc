@@ -1,0 +1,16 @@
+{
+  "printWidth": 160,
+  "trailingComma": "all",
+  "useTabs": false,
+  "tabWidth": 2,
+  "semi": false,
+  "singleQuote": true,
+  "quoteProps": "as-needed",
+  "jsxSingleQuote": false,
+  "bracketSpacing": true,
+  "proseWrap": "preserve",
+  "htmlWhitespaceSensitivity": "css",
+  "arrowParens": "always",
+  "endOfLine": "lf",
+  "disableLanguages": ["wxml"]
+}

@@ -1,0 +1,23 @@
+<view>
+  <yp-textarea
+    class="textarea"
+    custom-class="custom-class"
+    placeholderStyle="{{placeholderStyle}}"
+    value="{{value}}"
+    auto-focus="{{autoFocus}}"
+    bind:input="onTextChange"
+    maxlength="{{maxlength}}"
+    isStrike="{{isStrike}}"
+    cursor-spacing="{{cursorSpacing}}"
+    placeholder="{{placeholder}}"
+    adjustposition="{{adjustposition}}"
+  />
+  <view class="footer custom-class-footer">
+    <view>
+      <a bind:tap="onClear" wx:if="{{showClear}}">清空内容</a>
+    </view>
+    <view class="length">
+      {{value.length}} / {{maxlength}}字
+    </view>
+  </view>
+</view>

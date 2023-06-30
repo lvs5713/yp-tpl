@@ -1,0 +1,8 @@
+<!-- 撑开底部高度 -->
+<view class="box" style="height: {{height}};" />
+<!-- 固定到底部内容 -->
+<view class="content" style="bottom: {{bottom}};">
+  <view class="box" style="display: {{flex ? 'flex' : 'block'}};">
+    <slot></slot>
+  </view>
+</view>

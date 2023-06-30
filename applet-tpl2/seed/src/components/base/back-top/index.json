@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "zoom": "/components/base/anime/zoom/index"
+  }
+}

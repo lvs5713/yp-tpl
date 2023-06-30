@@ -1,0 +1,3 @@
+<view class="a custom-class" style="font-weight: {{bold ? 'bold' : 'none'}}; font-size: {{size}};">
+  <slot></slot>
+</view>

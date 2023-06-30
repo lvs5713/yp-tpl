@@ -1,0 +1,8 @@
+<view wx:if="{{loadedComp}}" class="top-wrapper">
+  <zoom opened="{{visible}}" catch:exited="unloadComp" scale="0.24">
+    <view class="top" bind:tap="onTop">
+      <icon-font type="yp-fanhui" custom-class="toTopIcon" size="36rpx" color="#262626" />
+      <view class="text">回到顶部</view>
+    </view>
+  </zoom>
+</view>

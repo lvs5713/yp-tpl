@@ -1,0 +1,18 @@
+<view class="form-input-box input-class"  bind:tap="onTap">
+  <input
+    placeholderStyle="{{placeholderStyle}}"
+    type="{{type}}"
+    maxlength="{{maxlength}}"
+    placeholder="{{placeholder}}"
+    bind:input="onInput"
+    bind:blur="onBlur"
+    value="{{value}}"
+    password="{{password}}"
+    focus="{{focus}}"
+    adjust-position="{{adjustPosition}}"
+    bindfocus="onFocus"
+    bindkeyboardheightchange="onBindkeyboardheightchange"
+    class="m-form-input custom-class"
+    disabled="{{inputDisabled}}"
+  />
+</view>

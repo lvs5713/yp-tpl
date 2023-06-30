@@ -1,0 +1,6 @@
+ <view class="empty-box">
+  <image class="empty-img" src="https://statics.zhaogongdi.com/images/pl/no-data.png" />
+  <view class="text" wx:if="{{text}}">{{ text }}</view>
+  <view class='dec' style="margin-top: {{!text ? '24rpx' : '12rpx'}}" wx:if="{{dec}}">{{dec}}</view>
+  <slot></slot>
+</view>

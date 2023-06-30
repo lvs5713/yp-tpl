@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "icon-font": "/components/base/icon-font/index"
+  }
+}

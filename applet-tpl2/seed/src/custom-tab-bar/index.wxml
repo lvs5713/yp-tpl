@@ -1,0 +1,16 @@
+<view class="tabbar-component">
+  <view class="tabBar">
+    <view class="tabBarItem" bind:tap="onClickTab" data-id="index" data-path="/pages/index/index">
+      <view class="tabBarItemBox">
+        <image class="tabBarItemImg" mode="aspectFill" src="{{ active == 'index' ? './images/home1.png' : './images/home2.png' }}" />
+        <view class="tabBarItemName {{ active == 'index' ? 'tabBarItemNameActive' : '' }}">首页</view>
+      </view>
+    </view>
+    <view class="tabBarItem" bind:tap="onClickTab" data-id="recruit" data-path="/pages/recruit/index">
+      <view class="tabBarItemBox">
+        <image class="tabBarItemImg" mode="aspectFill" src="{{ active == 'recruit' ? './images/sj1.png' : './images/sj2.png' }}" />
+        <view class="tabBarItemName {{ active == 'recruit' ? 'tabBarItemNameActive' : '' }}">司机招聘</view>
+      </view>
+    </view>
+  </view>
+</view>

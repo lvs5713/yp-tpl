@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "m-stripes": "/components/base/m-stripes/index",
+    "slide": "/components/base/anime/slide/index"
+  }
+}

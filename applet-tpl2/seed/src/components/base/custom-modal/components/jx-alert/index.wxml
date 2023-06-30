@@ -1,0 +1,29 @@
+<view class="mask" style="opacity: {{visible ? 1 : 0}}; visibility: {{visible ? 'visible' : 'hidden'}}" catch:touchmove="onTouchmove">
+  <view class="body {{options.mode}}">
+    <image wx:if="{{options.mode!='confirm'}}" class="type-img" src="https://statics.zhaogongdi.com/images/wp/{{options.mode}}.png" mode="aspectFit" />
+    <view class="title" wx:else>{{options.title}}</view>
+    <view wx:if="{{!isArray}}" class="content ~jx-alert-content">{{options.content}}</view>
+    <view wx:else class="content ~jx-alert-content">
+      <text wx:for="{{options.content}}" style="color:{{item.color}}" wx:key="index">{{item.text||item}}</text>
+    </view>
+    <view wx:if="{{options.contentImage}}" class="image-box ~jx-alert-content-image">
+      <image class="content-image" mode="widthFix" src="{{options.contentImage}}" />
+    </view>
+    <!-- 按钮文本都不存在，直接不展示 -->
+    <view class="actions" wx:if="{{options.cancelText || options.confirmText}}">
+      <view
+        wx:if="{{options.mode=='confirm' && options.cancelText}}"
+        class="btn btn-cancel {{ options.cancelText && options.confirmText ? 'btnMr' : '' }}"
+        bind:tap="onAction"
+        data-type="cancel"
+      >
+        {{options.cancelText}}
+      </view>
+
+      <view class="btn btn-sure" wx:if="{{options.confirmText}}" bind:tap="onAction" data-type="sure">
+        {{options.confirmText}}
+      </view>
+    </view>
+    <icon-font wx:if="{{!options.hideClose}}" type="yp-fabu" custom-class="close" size="100rpx" color="#ffffff" bind:tap="onAction" data-type="close" />
+  </view>
+</view>

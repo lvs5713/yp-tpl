@@ -1,0 +1,9 @@
+{
+  "navigationStyle": "custom",
+  "onReachBottomDistance": 400,
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark",
+  "backgroundColor": "#ffeed4",
+  "usingComponents": {
+  }
+}

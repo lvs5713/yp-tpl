@@ -1,0 +1,5 @@
+<view class="modal-body" style="opacity: {{visible ? '1' : '0'}}; z-index: {{zIndex}}; visibility: {{visible ? 'visible' : 'hidden'}};" catch:tap="onCloseMask" catch:touchmove="onTouchmove">
+  <slot wx:if="{{show}}"></slot>
+  <slot wx:if="{{show}}" name="closeIcon"></slot>
+  <image wx:if="{{closeIcon && show}}" class="img" catch:tap="onCloseIcon" src="https://staticscdn.zgzpsjz.com/miniprogram/images/mini-close-icon.png" />
+</view>
